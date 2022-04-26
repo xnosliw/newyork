@@ -176,6 +176,12 @@ footer{
   cursor: pointer;
 }
 
+@media (max-width:540px){
+  .gallery{
+    width: 300px;
+  }
+  .slider img{
+width: 300px;}}
 @media (max-width:768px){
   .logo{
     font-size: 1rem;
@@ -200,7 +206,15 @@ footer{
 .gallery{
   width: 500px;
 }
+.slider img{
+width: 500px;
+}
 .gallery .navigation{
   bottom: 45%;
 }
+}
+@media (max-width:1280px){
+  .gallery{
+    width: 800px;
+  }
 }
