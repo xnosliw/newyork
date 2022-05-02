@@ -63,15 +63,22 @@ nav ul li:hover::after{
   color: #fff;
 }
 .content h1{
-  font-size: 70px;
+  font-size: 4rem;
   margin-top: 80px;
+  margin-bottom: 20px;
 }
 .content p{
   margin: 20px auto;
   font-weight: 100px;
   line-height: 25px;
 }
-
+.header{
+  font-size: 4rem;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
 button{
   width: 200px;
   padding: 15px 0%;
@@ -143,12 +150,20 @@ footer{
   width: 100%;
   bottom: 0;
 }
+.sliderContainer{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
 .gallery{
   width: 1280px;
-  height: 90vh;
+  height: 720px;
   display: flex;
   position: relative;
   margin: auto;
+  overflow: hidden;
 }
 .slider img{
   width: 100%;
@@ -161,7 +176,7 @@ footer{
   z-index: 2;
   position: absolute;
   display: flex;
-  bottom: 25%;
+  bottom: 8%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -175,13 +190,35 @@ footer{
   border-radius: 50%;
   cursor: pointer;
 }
+.cardContainer{
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  position: relative;
+}
 
-@media (max-width:540px){
+.card{
+  margin: 0 20px;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 15px;
+  color: black;
+  width: 300px;
+  height: 200px;
+  font: bold 2rem/1.5rem;
+  transition: 0.3s;
+}
+.card:hover{
+  height: 450px;
+}
+@media (max-width:500px){
   .gallery{
-    width: 300px;
+    max-width: 400px;
+    margin-left: 50px;
   }
   .slider img{
-width: 300px;}}
+  max-width: 400px;}}
+
 @media (max-width:768px){
   .logo{
     font-size: 1rem;
@@ -204,7 +241,7 @@ width: 300px;}}
   display: block;
 }
 .gallery{
-  width: 500px;
+  max-width: 500px;
 }
 .slider img{
 width: 500px;
